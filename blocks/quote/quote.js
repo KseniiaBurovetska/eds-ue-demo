@@ -1,8 +1,7 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 
-
 export default async function decorate(block) {
-  const locale = window.location.pathname.split('/')[1]
+  const locale = window.location.pathname.split('/')[1];
   const placeholders = await fetchPlaceholders(`/${locale}`);
   const { key1 } = placeholders;
 
@@ -23,8 +22,8 @@ export default async function decorate(block) {
     });
   }
   const placeholderElement = document.createElement('div');
-  placeholderElement.innerText = key1
-  blockquote.append(placeholderElement)
+  placeholderElement.innerText = key1;
+  blockquote.append(placeholderElement);
 
   block.innerHTML = '';
   block.append(blockquote);
