@@ -1,8 +1,7 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
-  const locale = window.location.pathname.split('/')[1];
-  const placeholders = await fetchPlaceholders(`/${locale}`);
+  const placeholders = await fetchPlaceholders();
   const { key1 } = placeholders;
 
   const [quotation, attribution] = [...block.children].map((c) => c.firstElementChild);
