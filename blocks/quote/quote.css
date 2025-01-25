@@ -1,13 +1,3 @@
-.quote {
-    &.right blockquote {
-        text-align: right;
-    }
-
-    &.left blockquote {
-        text-align: left;
-    }
-}
-
 .quote blockquote {
     margin: 0 auto;
     padding: 0 24px;
@@ -17,6 +7,12 @@
 @media (width >=900px) {
     .quote blockquote {
         padding: 0 32px;
+    }
+}
+
+.quote {
+    &.right blockquote {
+        text-align: right;
     }
 }
 
