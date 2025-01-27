@@ -184,41 +184,5 @@
         "valueType": "string"
       }
     ]
-  },
-  {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "alignment",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Center",
-            "value": ""
-          },
-          {
-            "name": "Right",
-            "value": "right"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "attribution",
-        "value": "",
-        "label": "Attribution",
-        "valueType": "string"
-      }
-    ]
   }
 ]
